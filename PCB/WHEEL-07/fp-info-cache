@@ -1,4 +1,4 @@
-20550518918203335
+20553873443614919
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -86428,3 +86428,17 @@ Connector
 0
 2
 2
+WHEEL_07_LIBRARY_LOADER
+NE555DR
+D (R-PDSO-G8)
+Integrated Circuit
+0
+8
+8
+WHEEL_07_LIBRARY_LOADER
+SOTFL50P160X60-8N
+SOT583
+Integrated Circuit
+0
+8
+8
