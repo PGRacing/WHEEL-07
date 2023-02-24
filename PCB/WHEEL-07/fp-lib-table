@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "WHEEL-07")(type "KiCad")(uri "${KIPRJMOD}/ADDITIONAL/WHEEL-07.pretty")(options "")(descr ""))
+  (lib (name "WHEEL_07_LIBRARY_LOADER")(type "KiCad")(uri "${KIPRJMOD}/ADDITIONAL/SamacSys_Parts.pretty")(options "")(descr ""))
 )

@@ -2869,17 +2869,20 @@
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/c6f75faa-578e-4f9a-a3f2-d2dfaa4bbfa9"
       (reference "IC2") (unit 1) (value "LDO40LPU50RY") (footprint "BSPD_07:SON95P300X300X90-7N-D")
     )
+    (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/286532f5-f10a-4301-a195-2ad20410cc13"
+      (reference "IC?") (unit 1) (value "MP2332HGTL-P") (footprint "SOTFL50P160X60-8N")
+    )
     (path "/42235df3-7eb2-490c-bc8e-ac57af38ca34"
       (reference "J1") (unit 1) (value "Conn_01x06_Male") (footprint "")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/59bf420f-bf17-4b86-b246-606eba96dd3d"
-      (reference "J?") (unit 1) (value "SPI") (footprint "")
-    )
-    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/b97c19ca-5057-4601-9f66-6cc9746ce973"
-      (reference "J?") (unit 1) (value "I2C") (footprint "")
+      (reference "J2") (unit 1) (value "SPI") (footprint "")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/da19a933-0e3b-4080-b851-810dbd266a77"
-      (reference "J?") (unit 1) (value "USART") (footprint "")
+      (reference "J3") (unit 1) (value "USART") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/b97c19ca-5057-4601-9f66-6cc9746ce973"
+      (reference "J4") (unit 1) (value "I2C") (footprint "")
     )
     (path "/bb4e27bc-24fb-4359-b8f4-3e71c94a032a"
       (reference "JP1") (unit 1) (value "SolderJumper_3_Open") (footprint "")

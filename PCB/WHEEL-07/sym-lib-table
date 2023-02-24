@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name "WHEEL_07")(type "KiCad")(uri "C:/Users/Karol/Documents/GitHub/BSPD-07/PCB/BSPD-07/Additional/APHBM2012SURKCGKC/WHEEL_07.kicad_sym")(options "")(descr ""))
+  (lib (name "WHEEL_07_LIBRARY_LOADER")(type "Legacy")(uri "${KIPRJMOD}/ADDITIONAL/SamacSys_Parts.lib")(options "")(descr ""))
 )
