@@ -3309,6 +3309,21 @@
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/3295b12b-5407-462c-9152-2e051b4a63b9"
       (reference "#PWR0161") (unit 1) (value "+3.3V") (footprint "")
     )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/52c07a01-be0e-41b3-9ebb-ed3882bde185"
+      (reference "#PWR0162") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/e60dc0e8-8bdf-42d1-acdb-b74c000cbef2"
+      (reference "#PWR0163") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/2ef99942-003e-4785-b8c1-7020df473eb0"
+      (reference "#PWR0164") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/f989fb92-75af-4028-9a93-4ae7575c9288"
+      (reference "#PWR0165") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/91c6d73c-41c4-4bc5-8784-8a7026e6f2f8"
+      (reference "#PWR0166") (unit 1) (value "GND") (footprint "")
+    )
     (path "/8ad4c223-6f81-4437-8141-f3c9d7f6cc5b"
       (reference "C1") (unit 1) (value "2u2") (footprint "")
     )
@@ -3381,6 +3396,15 @@
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/6955cf88-24db-4ec5-a801-29c0d5ab71e9"
       (reference "C24") (unit 1) (value "100nF") (footprint "")
     )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/793313ea-b921-45a1-8125-38d75aa9f8d0"
+      (reference "C25") (unit 1) (value "10nF") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/e380cce1-253f-4aac-b6fd-210e43159d29"
+      (reference "C26") (unit 1) (value "10nF") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/779a731d-68e5-45a2-a0a2-3423c4426c6a"
+      (reference "C27") (unit 1) (value "10nF") (footprint "")
+    )
     (path "/90e06849-ca3d-4100-935d-cb35351aaaed"
       (reference "D1") (unit 1) (value "LED_Small") (footprint "")
     )
@@ -3394,7 +3418,7 @@
       (reference "IC3") (unit 1) (value "MP2332HGTL-P") (footprint "WHEEL_07_LIBRARY_LOADER:SOTFL50P160X60-8N")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/5b6cfea6-4b65-4096-a9c9-8b8147d77cdb"
-      (reference "IC4") (unit 1) (value "NL27WZ14DTT1G") (footprint "SOT95P275X110-6N")
+      (reference "IC4") (unit 1) (value "NL27WZ14DTT1G") (footprint "WHEEL_07_LIBRARY_LOADER:SOT95P275X110-6N")
     )
     (path "/42235df3-7eb2-490c-bc8e-ac57af38ca34"
       (reference "J1") (unit 1) (value "Conn_01x06_Male") (footprint "")
@@ -3428,6 +3452,9 @@
     )
     (path "/db170283-ff44-4eda-92d0-69393047eaee"
       (reference "J11") (unit 1) (value "Conn_02x03_Counter_Clockwise") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/da821982-f486-47b3-bc0b-1fceab59b280"
+      (reference "J12") (unit 1) (value "FRONT_PANEL") (footprint "")
     )
     (path "/bb4e27bc-24fb-4359-b8f4-3e71c94a032a"
       (reference "JP1") (unit 1) (value "SolderJumper_3_Open") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm")
@@ -3472,16 +3499,25 @@
       (reference "R11") (unit 1) (value "40.2k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/6a361e87-7f21-430f-9293-09ef3766133a"
-      (reference "R12") (unit 1) (value "1k") (footprint "")
+      (reference "R12") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/4e566501-50d0-4cf3-a1c9-41af8da74572"
-      (reference "R13") (unit 1) (value "1k") (footprint "")
+      (reference "R13") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/1bfd1651-eabe-433b-9130-924d7db6367c"
-      (reference "R14") (unit 1) (value "10k") (footprint "")
+      (reference "R14") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/910227cd-d585-408b-88bf-870942ef3210"
-      (reference "R15") (unit 1) (value "10k") (footprint "")
+      (reference "R15") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/36da4480-96a0-48c0-b176-cf17844bf772"
+      (reference "R16") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/bac6d651-985e-4762-9dab-5d353c7279e3"
+      (reference "R17") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/81fb770f-a562-425e-9760-68a659976baa"
+      (reference "R18") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/646b0549-ca16-44a1-b871-be2b8a681e8b"
       (reference "U1") (unit 1) (value "STM32F405RGTx") (footprint "Package_QFP:LQFP-64_10x10mm_P0.5mm")
