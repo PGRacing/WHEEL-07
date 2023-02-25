@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "WHEEL_07_AUTO_LOAD")(type "Legacy")(uri "C:/Users/Karol/Documents/GitHub/WHEEL-07/PCB/WHEEL-07/ADDITIONAL/SamacSys_Parts.lib")(options "")(descr ""))
+  (lib (name "ROTARY_SW")(type "KiCad")(uri "${KIPRJMOD}/ADDITIONAL/ROTARY_SW.kicad_sym")(options "")(descr ""))
+)

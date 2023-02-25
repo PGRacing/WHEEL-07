@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "WHEEL_07_AUTO_LOAD")(type "KiCad")(uri "C:/Users/Karol/Documents/GitHub/WHEEL-07/PCB/WHEEL-07/ADDITIONAL/SamacSys_Parts.pretty")(options "")(descr ""))
+  (lib (name "ROTART_SW")(type "KiCad")(uri "${KIPRJMOD}/ADDITIONAL/56DP30/ROTART_SW.pretty")(options "")(descr ""))
+)
