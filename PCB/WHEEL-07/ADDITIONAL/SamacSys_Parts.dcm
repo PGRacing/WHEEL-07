@@ -18,4 +18,10 @@ K
 F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-AE/DSA3AE0000168.pdf
 $ENDCMP
 #
+$CMP NL27WZ14DTT1G
+D Dual Schmitt Trigger Inverter
+K
+F http://www.onsemi.com/pub/Collateral/NL27WZ14-D.PDF
+$ENDCMP
+#
 #End Doc Library

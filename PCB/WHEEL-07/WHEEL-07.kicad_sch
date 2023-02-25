@@ -1106,7 +1106,6 @@
     )
   )
 
-
   (junction (at 208.28 51.435) (diameter 0) (color 0 0 0 0)
     (uuid 1f36d550-9434-4e5d-b30c-0606eb2c458b)
   )
@@ -1170,11 +1169,11 @@
 
   (no_connect (at 117.475 158.75) (uuid 0aef2f65-fe2a-47f2-a694-b93ba0b0cd1f))
   (no_connect (at 89.535 88.9) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f79785e))
-  (no_connect (at 53.975 106.68) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f79785e))
-  (no_connect (at 53.975 78.74) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f79785e))
-  (no_connect (at 89.535 71.12) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f79785e))
-  (no_connect (at 89.535 68.58) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f79785e))
-  (no_connect (at 89.535 78.74) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f79785e))
+  (no_connect (at 53.975 106.68) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f79785f))
+  (no_connect (at 53.975 78.74) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f797860))
+  (no_connect (at 89.535 71.12) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f797861))
+  (no_connect (at 89.535 68.58) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f797862))
+  (no_connect (at 89.535 78.74) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f797863))
 
   (bus_entry (at 48.26 86.36) (size 2.54 2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -3292,6 +3291,24 @@
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/3f9cbd32-1a9f-4f26-95f8-7f8e4e40895d"
       (reference "#PWR0155") (unit 1) (value "GND") (footprint "")
     )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/5eb42726-03e6-45e3-9d15-b44fe5beb09c"
+      (reference "#PWR0156") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/9c218036-745a-4611-b0cb-5970a50da252"
+      (reference "#PWR0157") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/47e9d090-134d-441c-9f4b-8d31ddcf6952"
+      (reference "#PWR0158") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/42f11568-4e98-472d-9f0b-61ccb46a1f96"
+      (reference "#PWR0159") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/20fb577e-edcd-439b-aeca-7eef3e871b60"
+      (reference "#PWR0160") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/3295b12b-5407-462c-9152-2e051b4a63b9"
+      (reference "#PWR0161") (unit 1) (value "+3.3V") (footprint "")
+    )
     (path "/8ad4c223-6f81-4437-8141-f3c9d7f6cc5b"
       (reference "C1") (unit 1) (value "2u2") (footprint "")
     )
@@ -3358,6 +3375,12 @@
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/b0c8fd03-9754-470e-ba3a-4f2a748ab263"
       (reference "C22") (unit 1) (value "22uF") (footprint "")
     )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/7c28ef5f-1ccc-4554-9891-debaf78d599a"
+      (reference "C23") (unit 1) (value "100nF") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/6955cf88-24db-4ec5-a801-29c0d5ab71e9"
+      (reference "C24") (unit 1) (value "100nF") (footprint "")
+    )
     (path "/90e06849-ca3d-4100-935d-cb35351aaaed"
       (reference "D1") (unit 1) (value "LED_Small") (footprint "")
     )
@@ -3369,6 +3392,9 @@
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/286532f5-f10a-4301-a195-2ad20410cc13"
       (reference "IC3") (unit 1) (value "MP2332HGTL-P") (footprint "WHEEL_07_LIBRARY_LOADER:SOTFL50P160X60-8N")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/5b6cfea6-4b65-4096-a9c9-8b8147d77cdb"
+      (reference "IC4") (unit 1) (value "NL27WZ14DTT1G") (footprint "SOT95P275X110-6N")
     )
     (path "/42235df3-7eb2-490c-bc8e-ac57af38ca34"
       (reference "J1") (unit 1) (value "Conn_01x06_Male") (footprint "")
@@ -3383,10 +3409,10 @@
       (reference "J4") (unit 1) (value "I2C") (footprint "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/47260083-2b4a-4760-b3bf-9736dd4175d9"
-      (reference "J5") (unit 1) (value "BUTTON") (footprint "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical")
+      (reference "J5") (unit 1) (value "PADDLE1") (footprint "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/d13916fa-f0e6-4033-b7f3-ff470442c152"
-      (reference "J6") (unit 1) (value "BUTTON") (footprint "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical")
+      (reference "J6") (unit 1) (value "PADDLE2") (footprint "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/766ada35-1e5a-4a1d-9b37-1fce1a91e656"
       (reference "J7") (unit 1) (value "BUTTON") (footprint "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical")
@@ -3402,9 +3428,6 @@
     )
     (path "/db170283-ff44-4eda-92d0-69393047eaee"
       (reference "J11") (unit 1) (value "Conn_02x03_Counter_Clockwise") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical")
-    )
-    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/2182d4b0-9ed0-4130-bb51-5bb0ed222940"
-      (reference "J12") (unit 1) (value "USART") (footprint "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical")
     )
     (path "/bb4e27bc-24fb-4359-b8f4-3e71c94a032a"
       (reference "JP1") (unit 1) (value "SolderJumper_3_Open") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm")
@@ -3447,6 +3470,18 @@
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/6cca82d4-3799-482f-a792-9a320e76c6f8"
       (reference "R11") (unit 1) (value "40.2k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/6a361e87-7f21-430f-9293-09ef3766133a"
+      (reference "R12") (unit 1) (value "1k") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/4e566501-50d0-4cf3-a1c9-41af8da74572"
+      (reference "R13") (unit 1) (value "1k") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/1bfd1651-eabe-433b-9130-924d7db6367c"
+      (reference "R14") (unit 1) (value "10k") (footprint "")
+    )
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/910227cd-d585-408b-88bf-870942ef3210"
+      (reference "R15") (unit 1) (value "10k") (footprint "")
     )
     (path "/646b0549-ca16-44a1-b871-be2b8a681e8b"
       (reference "U1") (unit 1) (value "STM32F405RGTx") (footprint "Package_QFP:LQFP-64_10x10mm_P0.5mm")
