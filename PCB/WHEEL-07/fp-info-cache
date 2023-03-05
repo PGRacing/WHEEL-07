@@ -1,4 +1,4 @@
-20553873443614919
+20562270075016342
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -61544,6 +61544,13 @@ MOSFET (N-Channel)
 7
 7
 PDM_Additional
+N010366501001
+N01 036 6501 001-2
+Connector
+0
+16
+16
+PDM_Additional
 PG-TO263-7-3_3
 PG-TO263-7-3_2
 Integrated Circuit
@@ -61622,8 +61629,8 @@ Integrated Circuit
 25
 PDM_Additional
 SOT65P210X110-6N
-DCK---
-Integrated Circuit
+
+
 0
 6
 6
@@ -86428,6 +86435,27 @@ Connector
 0
 2
 2
+WHEEL-07
+SON95P300X300X90-7N-D
+DFN6 (3x3) package outline-A
+Integrated Circuit
+0
+7
+7
+WHEEL_07_LIBRARY_LOADER
+56SP3001B12N
+56SDP30-01PAJS-7
+Switch
+0
+13
+13
+WHEEL_07_LIBRARY_LOADER
+N010366501001
+N01 036 6501 001-2
+Connector
+0
+16
+16
 WHEEL_07_LIBRARY_LOADER
 NE555DR
 D (R-PDSO-G8)
@@ -86435,6 +86463,13 @@ Integrated Circuit
 0
 8
 8
+WHEEL_07_LIBRARY_LOADER
+SOT95P275X110-6N
+TSOP-6
+Integrated Circuit
+0
+6
+6
 WHEEL_07_LIBRARY_LOADER
 SOTFL50P160X60-8N
 SOT583

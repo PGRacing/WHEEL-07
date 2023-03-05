@@ -24,4 +24,10 @@ K
 F http://www.onsemi.com/pub/Collateral/NL27WZ14-D.PDF
 $ENDCMP
 #
+$CMP N01_036_6501_001
+D 16 Pin Shank Terminal Through Hole
+K
+F https://www.mouser.com/datasheet/2/18/1/N010366501001-1221167.pdf
+$ENDCMP
+#
 #End Doc Library

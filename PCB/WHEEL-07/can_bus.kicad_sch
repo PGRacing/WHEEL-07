@@ -865,7 +865,7 @@
     (property "Reference" "C12" (id 0) (at 155.575 33.02 0)
       (effects (font (size 0.8 0.8)) (justify left))
     )
-    (property "Value" "0,1mF" (id 1) (at 155.575 35.56 0)
+    (property "Value" "0,1nF" (id 1) (at 155.575 35.56 0)
       (effects (font (size 0.8 0.8)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (id 2) (at 153.035 35.56 0)
