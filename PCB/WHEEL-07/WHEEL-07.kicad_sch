@@ -980,58 +980,6 @@
         )
       )
     )
-    (symbol "power:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (id 0) (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+12V" (id 1) (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+12V\"" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+12V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "+12V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+12V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (id 0) (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -1306,6 +1254,7 @@
     (uuid fd9b3cb9-b2ad-4d12-85fd-a93818c6215e)
   )
 
+  (no_connect (at 210.82 135.255) (uuid 00ad01a9-e821-47fb-82cf-33a7d6090bef))
   (no_connect (at 117.475 158.75) (uuid 0aef2f65-fe2a-47f2-a694-b93ba0b0cd1f))
   (no_connect (at 89.535 88.9) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f79785e))
   (no_connect (at 53.975 106.68) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f79785f))
@@ -1313,6 +1262,9 @@
   (no_connect (at 89.535 71.12) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f797861))
   (no_connect (at 89.535 68.58) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f797862))
   (no_connect (at 89.535 78.74) (uuid 2f4ed77f-b01f-4aa6-906c-d4187f797863))
+  (no_connect (at 89.535 93.98) (uuid 55a4ca41-85f9-4217-9117-43b63b5c01de))
+  (no_connect (at 89.535 101.6) (uuid 55a4ca41-85f9-4217-9117-43b63b5c01df))
+  (no_connect (at 89.535 91.44) (uuid 5767a186-daee-4e9d-a723-607deda45047))
 
   (bus_entry (at 48.26 86.36) (size 2.54 2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -2074,13 +2026,6 @@
       (effects (font (size 1.016 1.016)) (justify left) hide)
     )
   )
-  (global_label "CAN1_TERMINATOR_SW" (shape output) (at 86.995 161.29 0) (fields_autoplaced)
-    (effects (font (size 1.016 1.016)) (justify left))
-    (uuid 407fb661-2fec-49f5-9db8-bee726c65194)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 105.6652 161.2265 0)
-      (effects (font (size 1.016 1.016)) (justify left) hide)
-    )
-  )
   (global_label "OSC_IN" (shape input) (at 53.975 71.12 180) (fields_autoplaced)
     (effects (font (size 1.016 1.016)) (justify right))
     (uuid 42b4e785-6304-4e25-9dc0-bd48b7d6fc5d)
@@ -2100,6 +2045,13 @@
     (uuid 4ef8dc44-ef4d-4004-90ea-b064b8a3c5c2)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 44.0663 119.3119 0)
       (effects (font (size 1.09 1.09)) (justify right) hide)
+    )
+  )
+  (global_label "12V_CONN" (shape input) (at 53.975 185.42 270) (fields_autoplaced)
+    (effects (font (size 1.016 1.016)) (justify right))
+    (uuid 561d3721-ecb8-4c97-9071-b3c3421d3c2c)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 54.0385 195.1397 90)
+      (effects (font (size 1.016 1.016)) (justify right) hide)
     )
   )
   (global_label "TIM3_CH2" (shape input) (at 53.975 101.6 180) (fields_autoplaced)
@@ -2263,13 +2215,6 @@
       (effects (font (size 1.016 1.016)) (justify left) hide)
     )
   )
-  (global_label "CAN2_TERMINATOR_SW" (shape output) (at 86.995 179.705 0) (fields_autoplaced)
-    (effects (font (size 1.016 1.016)) (justify left))
-    (uuid b957f4fc-ab0e-4bfc-aaf2-6b2a4ac8f713)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 105.6652 179.6415 0)
-      (effects (font (size 1.016 1.016)) (justify left) hide)
-    )
-  )
   (global_label "OSC_OUT" (shape input) (at 216.535 43.18 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid c21f8fd0-579f-4a0c-85bd-eefae00aa5be)
@@ -2291,13 +2236,6 @@
       (effects (font (size 1.016 1.016)) (justify left) hide)
     )
   )
-  (global_label "CAN1_TERMINATOR_SW" (shape output) (at 89.535 93.98 0) (fields_autoplaced)
-    (effects (font (size 1.016 1.016)) (justify left))
-    (uuid d26558d8-eb27-41a2-8365-8c28089df00a)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 108.2052 93.9165 0)
-      (effects (font (size 1.016 1.016)) (justify left) hide)
-    )
-  )
   (global_label "CAN1_RX" (shape input) (at 86.995 164.465 0) (fields_autoplaced)
     (effects (font (size 1.016 1.016)) (justify left))
     (uuid d5c86283-373a-4d1b-99a6-ae42cd495da2)
@@ -2310,13 +2248,6 @@
     (uuid d7986118-47d1-48f8-9efa-1a61acda9ea5)
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 271.7006 29.9417 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "CAN2_TERMINATOR_SW" (shape output) (at 89.535 101.6 0) (fields_autoplaced)
-    (effects (font (size 1.016 1.016)) (justify left))
-    (uuid df8aa4be-5341-4d21-96be-687ebcced08a)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 108.2052 101.5365 0)
-      (effects (font (size 1.016 1.016)) (justify left) hide)
     )
   )
   (global_label "CAN2_TX" (shape input) (at 89.535 99.06 0) (fields_autoplaced)
@@ -2464,40 +2395,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2c91d464-45cc-4e85-9c72-8a72d6f99f86))
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 201.295 156.845 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 0805718e-8e6f-45fd-8b08-a474df2ed9fa)
-    (property "Reference" "H2" (id 0) (at 203.835 155.5749 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (id 1) (at 203.835 158.1149 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (id 2) (at 201.295 156.845 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 201.295 156.845 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 222.885 156.845 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 0edc40c1-40db-401a-8e21-7019e366d1a1)
-    (property "Reference" "H3" (id 0) (at 225.425 155.5749 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (id 1) (at 225.425 158.1149 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (id 2) (at 222.885 156.845 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 222.885 156.845 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
   )
 
   (symbol (lib_id "Device:R_Small") (at 111.125 105.41 0) (unit 1)
@@ -2699,15 +2596,19 @@
     (pin "1" (uuid 0c59e0bb-7d18-48ed-a135-e45071cf4272))
   )
 
-  (symbol (lib_id "Connector:Conn_01x06_Male") (at 40.005 170.18 0) (unit 1)
+  (symbol (lib_id "Connector:Conn_01x06_Male") (at 40.005 172.72 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 42235df3-7eb2-490c-bc8e-ac57af38ca34)
-    (property "Reference" "J1" (id 0) (at 40.64 160.02 0))
-    (property "Value" "Conn_01x06_Male" (id 1) (at 40.64 162.56 0))
-    (property "Footprint" "" (id 2) (at 40.005 170.18 0)
+    (property "Reference" "J1" (id 0) (at 38.1 170.1799 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "Conn_01x06_Male" (id 1) (at 38.1 172.7199 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Connector_Molex:Molex_Micro-Latch_53254-0670_1x06_P2.00mm_Horizontal" (id 2) (at 40.005 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (id 3) (at 40.005 170.18 0)
+    (property "Datasheet" "~" (id 3) (at 40.005 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5893751e-7fd7-4cdb-9b82-24d5bf7ba87b))
@@ -3187,23 +3088,6 @@
     (pin "1" (uuid 7186af17-d3b1-4ec4-ad70-96693f79c825))
   )
 
-  (symbol (lib_id "Mechanical:MountingHole") (at 244.475 156.845 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid aa16a870-a69a-49d1-b9b8-3f047be8a8d5)
-    (property "Reference" "H4" (id 0) (at 247.015 155.5749 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (id 1) (at 247.015 158.1149 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2" (id 2) (at 244.475 156.845 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 244.475 156.845 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-
   (symbol (lib_id "Jumper:SolderJumper_3_Open") (at 264.795 100.965 180) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid bb4e27bc-24fb-4359-b8f4-3e71c94a032a)
@@ -3288,24 +3172,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid fff40036-4199-4f20-8383-7ae77cf5569d))
-  )
-
-  (symbol (lib_id "power:+12V") (at 210.82 135.255 90) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid d3c07d37-32d7-4ca4-a5ad-a44b82c8ccf0)
-    (property "Reference" "#PWR0154" (id 0) (at 214.63 135.255 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (id 1) (at 207.01 135.2549 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (id 2) (at 210.82 135.255 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 210.82 135.255 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d8dee6ca-b79e-43dc-a64d-82c23939df4b))
   )
 
   (symbol (lib_id "power:GND") (at 210.82 132.715 270) (unit 1)
@@ -3430,22 +3296,6 @@
     (pin "1" (uuid 804d7ca2-cb6b-481b-98b1-e331b137d7b8))
   )
 
-  (symbol (lib_id "power:+12V") (at 53.975 185.42 180) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid e7ba2941-3fea-40c7-9419-6d35cc1faf99)
-    (property "Reference" "#PWR0115" (id 0) (at 53.975 181.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (id 1) (at 53.975 190.5 0))
-    (property "Footprint" "" (id 2) (at 53.975 185.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 53.975 185.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 71d6359a-b0f3-40a5-a291-318d56a997fd))
-  )
-
   (symbol (lib_id "power:PWR_FLAG") (at 46.99 184.15 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid f0182e1b-3317-4100-a6be-da08e1bec2fe)
@@ -3518,11 +3368,11 @@
     (property "Sheet file" "can_bus.kicad_sch" (id 1) (at 57.15 187.2746 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (pin "CAN1_L" bidirectional (at 57.15 165.1 180)
+    (pin "CAN1_L" bidirectional (at 57.15 170.18 180)
       (effects (font (size 1.016 1.016)) (justify left))
       (uuid a8d6f154-dc29-46a8-920a-60626a5c734b)
     )
-    (pin "CAN1_H" bidirectional (at 57.15 167.64 180)
+    (pin "CAN1_H" bidirectional (at 57.15 172.72 180)
       (effects (font (size 1.016 1.016)) (justify left))
       (uuid ed61c465-5219-4966-ad73-384444211932)
     )
@@ -3534,11 +3384,11 @@
       (effects (font (size 1.016 1.016)) (justify right))
       (uuid e984d9c9-0c4b-4916-9213-d21f79804a8f)
     )
-    (pin "CAN2_L" bidirectional (at 57.15 170.18 180)
+    (pin "CAN2_L" bidirectional (at 57.15 165.1 180)
       (effects (font (size 1.016 1.016)) (justify left))
       (uuid 9be26467-f85a-4c78-9104-94d237075f6c)
     )
-    (pin "CAN2_H" bidirectional (at 57.15 172.72 180)
+    (pin "CAN2_H" bidirectional (at 57.15 167.64 180)
       (effects (font (size 1.016 1.016)) (justify left))
       (uuid 85564d85-87e5-4e7d-a45b-918e1d84fabd)
     )
@@ -3549,14 +3399,6 @@
     (pin "CAN2_RX" input (at 86.995 174.625 0)
       (effects (font (size 1.016 1.016)) (justify right))
       (uuid 0a06dcd9-4fa1-4200-9bd6-ec30bdaaafa0)
-    )
-    (pin "CAN_TERMINATOR_1" input (at 86.995 161.29 0)
-      (effects (font (size 1.016 1.016)) (justify right))
-      (uuid 42a24bfa-05df-49ac-89b0-610682514b4b)
-    )
-    (pin "CAN_TERMINATOR_2" input (at 86.995 179.705 0)
-      (effects (font (size 1.016 1.016)) (justify right))
-      (uuid 646f822a-aad9-4cc4-977b-47f44d312f88)
     )
   )
 
@@ -3582,6 +3424,9 @@
     )
     (path "/f0182e1b-3317-4100-a6be-da08e1bec2fe"
       (reference "#FLG0105") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
+    (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/f971ffd3-e50e-45ad-b1ef-b18f80ae8d3f"
+      (reference "#FLG0106") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/06d2401d-5c35-4af5-a28d-a4989cc6b532"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
@@ -3625,26 +3470,14 @@
     (path "/8029c9a7-b4f9-47c5-bccc-4d6abcf25ad0"
       (reference "#PWR0114") (unit 1) (value "GND") (footprint "")
     )
-    (path "/e7ba2941-3fea-40c7-9419-6d35cc1faf99"
-      (reference "#PWR0115") (unit 1) (value "+12V") (footprint "")
-    )
     (path "/53add172-c06f-4c0d-a472-3d10fc676762"
       (reference "#PWR0116") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/6e944a00-1fac-4eea-9bb3-9f82c92e886d"
-      (reference "#PWR0117") (unit 1) (value "GND") (footprint "")
     )
     (path "/2f3c9b8d-4cf9-4ba3-ad7c-bc79df5fd12d"
       (reference "#PWR0118") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/76b94790-4cd2-4cf6-84a8-af9d681d4eab"
       (reference "#PWR0119") (unit 1) (value "+3.3V") (footprint "")
-    )
-    (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/5f933e71-5939-4b73-b6bd-5c4925bf19c9"
-      (reference "#PWR0120") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/a0ddb579-2e6b-4b17-8e73-f0c5d7c7d5b4"
-      (reference "#PWR0121") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/6228db10-b429-480f-8091-2820cb5d8c31"
       (reference "#PWR0122") (unit 1) (value "GND") (footprint "")
@@ -3658,14 +3491,8 @@
     (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/d8013597-67a8-4bc1-819f-d6b895534ec8"
       (reference "#PWR0125") (unit 1) (value "GND") (footprint "")
     )
-    (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/223599d0-81e6-42d1-8bba-e8d1f9898857"
-      (reference "#PWR0126") (unit 1) (value "GND") (footprint "")
-    )
     (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/44ed873f-d86e-4079-acad-9cb16c7331c8"
       (reference "#PWR0127") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/0c012892-f3f1-490e-9a53-eab4ae0ef589"
-      (reference "#PWR0128") (unit 1) (value "GND") (footprint "")
     )
     (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/652b7340-ebe7-40a2-a944-89c28035d923"
       (reference "#PWR0129") (unit 1) (value "+5V") (footprint "")
@@ -3741,9 +3568,6 @@
     )
     (path "/d641d3b6-7858-4804-8076-48d573662484"
       (reference "#PWR0153") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/d3c07d37-32d7-4ca4-a5ad-a44b82c8ccf0"
-      (reference "#PWR0154") (unit 1) (value "+12V") (footprint "")
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/3f9cbd32-1a9f-4f26-95f8-7f8e4e40895d"
       (reference "#PWR0155") (unit 1) (value "GND") (footprint "")
@@ -3850,15 +3674,6 @@
     (path "/974fd1d0-72ee-47cf-8170-5ffb655543b7"
       (reference "C9") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
     )
-    (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/dd7cb666-2125-4a11-8cd5-a2167c515ad1"
-      (reference "C10") (unit 1) (value "0.1u") (footprint "")
-    )
-    (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/55c4588c-0268-49a7-bdf4-baf5a6d07f0d"
-      (reference "C11") (unit 1) (value "0.1u") (footprint "")
-    )
-    (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/7e568021-35d1-4ef9-9036-397c1768df8d"
-      (reference "C12") (unit 1) (value "0,1nF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
-    )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/72e5787c-1f87-4d54-bf66-8d1cff6924e7"
       (reference "C13") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
@@ -3866,22 +3681,22 @@
       (reference "C14") (unit 1) (value "4.7uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/fb88c143-3659-425b-9775-cf77c27ca176"
-      (reference "C15") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
+      (reference "C15") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/b5b3b476-d33c-4ea9-a66f-fcefff898d81"
-      (reference "C16") (unit 1) (value "1nF") (footprint "")
+      (reference "C16") (unit 1) (value "1nF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/14b3d231-af89-4ea6-b8af-76489e594fbb"
-      (reference "C17") (unit 1) (value "0.1uF") (footprint "")
+      (reference "C17") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/c6e322e8-765f-4e8b-8f3c-0712a63b30a8"
-      (reference "C18") (unit 1) (value "6.8nF") (footprint "")
+      (reference "C18") (unit 1) (value "6.8nF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/fa39f872-685f-4615-b247-1f2254375717"
-      (reference "C19") (unit 1) (value "1uF") (footprint "")
+      (reference "C19") (unit 1) (value "1uF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/97908419-7535-45a1-8d80-d38c12b7c6de"
-      (reference "C20") (unit 1) (value "10pF") (footprint "")
+      (reference "C20") (unit 1) (value "10pF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/75d5fb79-6057-4a57-8597-85614dd7e487"
       (reference "C21") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder")
@@ -3943,18 +3758,6 @@
     (path "/4ba4efa7-eb64-4957-bca9-a8e1b9368d80"
       (reference "H1") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.2mm_M2")
     )
-    (path "/0805718e-8e6f-45fd-8b08-a474df2ed9fa"
-      (reference "H2") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.2mm_M2")
-    )
-    (path "/0edc40c1-40db-401a-8e21-7019e366d1a1"
-      (reference "H3") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.2mm_M2")
-    )
-    (path "/aa16a870-a69a-49d1-b9b8-3f047be8a8d5"
-      (reference "H4") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_2.2mm_M2")
-    )
-    (path "/4a0dcc41-bb6b-4a9b-a87e-681379fd6d11/79883fd2-4d9f-44a6-a9b7-2884f07f19d3"
-      (reference "IC1") (unit 1) (value "TS5A21366DCUR") (footprint "PDM_Additional:SOP50P310X90-8N")
-    )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/44f191b3-3aef-4339-a0e1-7ce959cf03e1"
       (reference "IC2") (unit 1) (value "LDO40LPU50RY") (footprint "WHEEL-07:SON95P300X300X90-7N-D")
     )
@@ -3965,22 +3768,13 @@
       (reference "IC4") (unit 1) (value "NL27WZ14DTT1G") (footprint "WHEEL_07_LIBRARY_LOADER:SOT95P275X110-6N")
     )
     (path "/42235df3-7eb2-490c-bc8e-ac57af38ca34"
-      (reference "J1") (unit 1) (value "Conn_01x06_Male") (footprint "")
+      (reference "J1") (unit 1) (value "Conn_01x06_Male") (footprint "Connector_Molex:Molex_Micro-Latch_53254-0670_1x06_P2.00mm_Horizontal")
     )
-    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/59bf420f-bf17-4b86-b246-606eba96dd3d"
-      (reference "J2") (unit 1) (value "SPI") (footprint "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical")
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/93931a7d-f95b-4129-9523-ba9992253d66"
+      (reference "J2") (unit 1) (value "Conn_01x06_Male") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical")
     )
-    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/da19a933-0e3b-4080-b851-810dbd266a77"
-      (reference "J3") (unit 1) (value "USART") (footprint "Connector_Molex:Molex_PicoBlade_53047-0310_1x03_P1.25mm_Vertical")
-    )
-    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/b97c19ca-5057-4601-9f66-6cc9746ce973"
-      (reference "J4") (unit 1) (value "I2C") (footprint "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical")
-    )
-    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/47260083-2b4a-4760-b3bf-9736dd4175d9"
-      (reference "J5") (unit 1) (value "PADDLE1") (footprint "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical")
-    )
-    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/d13916fa-f0e6-4033-b7f3-ff470442c152"
-      (reference "J6") (unit 1) (value "PADDLE2") (footprint "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical")
+    (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/29191791-18aa-492e-83eb-e95734ba3514"
+      (reference "J5") (unit 1) (value "Conn_01x04_Male") (footprint "Connector_Molex:Molex_Micro-Latch_53254-0470_1x04_P2.00mm_Horizontal")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/766ada35-1e5a-4a1d-9b37-1fce1a91e656"
       (reference "J7") (unit 1) (value "BUTTON") (footprint "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical")
@@ -4019,7 +3813,7 @@
       (reference "L1") (unit 1) (value "2u7 120m") (footprint "Inductor_SMD:L_0402_1005Metric")
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/f2bbb474-2e24-4e6a-8397-56742010ac78"
-      (reference "L2") (unit 1) (value "2.2uH") (footprint "")
+      (reference "L2") (unit 1) (value "2.2uH") (footprint "Inductor_SMD:L_Vishay_IHLP-1616")
     )
     (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/6559bf52-abc5-40db-a8fe-4ce954cc5fcc"
       (reference "Q1") (unit 1) (value "AO3401A") (footprint "Package_TO_SOT_SMD:SOT-23")
@@ -4077,9 +3871,6 @@
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/81fb770f-a562-425e-9760-68a659976baa"
       (reference "R18") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder")
-    )
-    (path "/15ef381a-403b-4e16-bdb3-d63c11fd81a5/44700a4f-8d9f-4e9b-8c39-0e50339d235f"
-      (reference "R19") (unit 1) (value "100") (footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder")
     )
     (path "/2421c5aa-54b0-46e8-bdd8-d88e469ab69b/0def8512-7d17-4e2d-887d-74aa7b1cf3b5"
       (reference "R20") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder")
