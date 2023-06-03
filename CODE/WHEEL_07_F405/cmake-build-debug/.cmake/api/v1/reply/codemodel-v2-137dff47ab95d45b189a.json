@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "WHEEL_07_F405",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "WHEEL_07_F405.elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WHEEL_07_F405.elf-Debug-c01ce9d139db247c5e21.json",
+					"name" : "WHEEL_07_F405.elf",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/cmake-build-debug",
+		"source" : "C:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
