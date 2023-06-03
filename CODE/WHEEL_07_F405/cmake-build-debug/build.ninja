@@ -59,6 +59,16 @@ build CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/main.c.obj: C_COMPILER__WHEEL_07
   TARGET_COMPILE_PDB = CMakeFiles\WHEEL_07_F405.elf.dir\
   TARGET_PDB = WHEEL_07_F405.elf.pdb
 
+build CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/rotary.c.obj: C_COMPILER__WHEEL_07_F405.2eelf_Debug C$:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Core/Src/rotary.c || cmake_object_order_depends_target_WHEEL_07_F405.elf
+  DEFINES = -DDEBUG -DSTM32F405xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\WHEEL_07_F405.elf.dir\Core\Src\rotary.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Core/Inc -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\WHEEL_07_F405.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\WHEEL_07_F405.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\WHEEL_07_F405.elf.dir\
+  TARGET_PDB = WHEEL_07_F405.elf.pdb
+
 build CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: C_COMPILER__WHEEL_07_F405.2eelf_Debug C$:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Core/Src/stm32f4xx_hal_msp.c || cmake_object_order_depends_target_WHEEL_07_F405.elf
   DEFINES = -DDEBUG -DSTM32F405xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\WHEEL_07_F405.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj.d
@@ -122,6 +132,26 @@ build CMakeFiles/WHEEL_07_F405.elf.dir/Core/Startup/startup_stm32f405rgtx.s.obj:
 build CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: C_COMPILER__WHEEL_07_F405.2eelf_Debug C$:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c || cmake_object_order_depends_target_WHEEL_07_F405.elf
   DEFINES = -DDEBUG -DSTM32F405xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\WHEEL_07_F405.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Core/Inc -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\WHEEL_07_F405.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\WHEEL_07_F405.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\WHEEL_07_F405.elf.dir\
+  TARGET_PDB = WHEEL_07_F405.elf.pdb
+
+build CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj: C_COMPILER__WHEEL_07_F405.2eelf_Debug C$:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c || cmake_object_order_depends_target_WHEEL_07_F405.elf
+  DEFINES = -DDEBUG -DSTM32F405xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\WHEEL_07_F405.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Core/Inc -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\WHEEL_07_F405.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\WHEEL_07_F405.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\WHEEL_07_F405.elf.dir\
+  TARGET_PDB = WHEEL_07_F405.elf.pdb
+
+build CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj: C_COMPILER__WHEEL_07_F405.2eelf_Debug C$:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c || cmake_object_order_depends_target_WHEEL_07_F405.elf
+  DEFINES = -DDEBUG -DSTM32F405xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\WHEEL_07_F405.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
   INCLUDES = -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Core/Inc -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\WHEEL_07_F405.elf.dir
@@ -279,6 +309,16 @@ build CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4x
   TARGET_COMPILE_PDB = CMakeFiles\WHEEL_07_F405.elf.dir\
   TARGET_PDB = WHEEL_07_F405.elf.pdb
 
+build CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj: C_COMPILER__WHEEL_07_F405.2eelf_Debug C$:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c || cmake_object_order_depends_target_WHEEL_07_F405.elf
+  DEFINES = -DDEBUG -DSTM32F405xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\WHEEL_07_F405.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_adc.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Core/Inc -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\WHEEL_07_F405.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\WHEEL_07_F405.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\WHEEL_07_F405.elf.dir\
+  TARGET_PDB = WHEEL_07_F405.elf.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target WHEEL_07_F405.elf
@@ -287,7 +327,7 @@ build CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4x
 #############################################
 # Link the executable WHEEL_07_F405.elf
 
-build WHEEL_07_F405.elf: C_EXECUTABLE_LINKER__WHEEL_07_F405.2eelf_Debug CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/main.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_it.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/system_stm32f4xx.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Startup/startup_stm32f405rgtx.s.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+build WHEEL_07_F405.elf: C_EXECUTABLE_LINKER__WHEEL_07_F405.2eelf_Debug CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/main.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/rotary.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_it.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/system_stm32f4xx.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Core/Startup/startup_stm32f405rgtx.s.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
   FLAGS = -g
   LINK_FLAGS = -Wl,-gc-sections,--print-memory-usage,-Map=C:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/cmake-build-debug/WHEEL_07_F405.map -mcpu=cortex-m4 -mthumb -mthumb-interwork -T C:/Users/Karol/Documents/GitHub/WHEEL-07/CODE/WHEEL_07_F405/STM32F405RGTX_FLASH.ld
   OBJECT_DIR = CMakeFiles\WHEEL_07_F405.elf.dir
