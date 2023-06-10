@@ -21,121 +21,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79b4f90b-1190-4469-9fde-8ca2ef4f8f1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Core/Inc/FreeRTOSConfig.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/adc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/can.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/dma.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/gpio.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/tim.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/adc.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/can.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/dma.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_hal_timebase_tim.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/tim.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_mpool.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/croutine.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/atomic.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/list.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/message_buffer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_prototypes.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/task.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/list.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/queue.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/tasks.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/timers.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/f405_studio.tsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists_template.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists_template.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/adc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/adc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/rotary.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/rotary.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_hal_conf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/adc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/adc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/rotary.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/rotary.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f4xx_hal_msp.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_hal_msp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WHEEL_07_F405.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/WHEEL_07_F405.ioc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-74869b1215ce15f5ddc1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-06-03T02-06-03-0708.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-WHEEL_07_F405.elf-Debug-75d4ec76e5db8ad26261.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-06-10T19-23-20-0586.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/rotary.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/rotary.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_it.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/syscalls.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/syscalls.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/sysmem.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/sysmem.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/system_stm32f4xx.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/system_stm32f4xx.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/adc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/can.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/dma.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/freertos.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/gpio.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/rotary.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/stm32f4xx_it.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/syscalls.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/sysmem.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/system_stm32f4xx.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/tim.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Startup/startup_stm32f405rgtx.s.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/ROTARY_SW/ROTARY_SW-backups/ROTARY_SW-2023-02-25_024851.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/ROTARY_SW/ROTARY_SW.kicad_pcb" beforeDir="false" afterPath="$PROJECT_DIR$/../../PCB/ROTARY_SW/ROTARY_SW.kicad_pcb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-03-17_235548.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-03-18_001148.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-03-18_001658.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-03-18_002558.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-03-18_005616.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-03-18_170342.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-03-19_235733.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-03-21_125048.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-03-22_125916.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-04-26_225924.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07.kicad_prl" beforeDir="false" afterPath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07.kicad_prl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/power_a.pckl" beforeDir="false" afterPath="$PROJECT_DIR$/../../PCB/WHEEL-07/power_a.pckl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +127,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "run.code.analysis.last.selected.profile": "pProject Default",
+    "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -220,14 +169,32 @@
       <workItem from="1685314085348" duration="353000" />
       <workItem from="1685314533746" duration="4901000" />
       <workItem from="1685755404645" duration="3526000" />
-      <workItem from="1686416057475" duration="9359000" />
+      <workItem from="1686416057475" duration="18114000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/Core/Src/rotary.c" line="106">
+        <watch expression="currentType-&gt;adcExpectedReading" />
+      </inline-watch>
+    </watches-manager>
   </component>
 </project>

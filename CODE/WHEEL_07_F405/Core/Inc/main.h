@@ -59,6 +59,22 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define STATUS_LED_Pin GPIO_PIN_13
 #define STATUS_LED_GPIO_Port GPIOC
+#define PADDLE_DOWN_Pin GPIO_PIN_4
+#define PADDLE_DOWN_GPIO_Port GPIOA
+#define PADDLE_UP_Pin GPIO_PIN_5
+#define PADDLE_UP_GPIO_Port GPIOA
+#define WHEEL_BTN1_Pin GPIO_PIN_6
+#define WHEEL_BTN1_GPIO_Port GPIOA
+#define WHEEL_BTN2_Pin GPIO_PIN_7
+#define WHEEL_BTN2_GPIO_Port GPIOA
+#define WHEEL_BTN3_Pin GPIO_PIN_4
+#define WHEEL_BTN3_GPIO_Port GPIOC
+#define WHEEL_BTN4_Pin GPIO_PIN_5
+#define WHEEL_BTN4_GPIO_Port GPIOC
+#define WHEEL_BTN5_Pin GPIO_PIN_0
+#define WHEEL_BTN5_GPIO_Port GPIOB
+#define WHEEL_BTN6_Pin GPIO_PIN_1
+#define WHEEL_BTN6_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -68,6 +68,20 @@ const osThreadAttr_t adcTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
+/* Definitions for muxswTask */
+osThreadId_t muxswTaskHandle;
+const osThreadAttr_t muxswTask_attributes = {
+  .name = "muxswTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for buttonTask */
+osThreadId_t buttonTaskHandle;
+const osThreadAttr_t buttonTask_attributes = {
+  .name = "buttonTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -75,8 +89,10 @@ const osThreadAttr_t adcTask_attributes = {
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
-void StartStatusTask(void *argument);
+void statusTaskStart(void *argument);
 extern void adcTaskStart(void *argument);
+extern void muxswTaskStart(void *argument);
+extern void buttonTaskStart(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -111,10 +127,16 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* creation of statusTask */
-  statusTaskHandle = osThreadNew(StartStatusTask, NULL, &statusTask_attributes);
+  statusTaskHandle = osThreadNew(statusTaskStart, NULL, &statusTask_attributes);
 
   /* creation of adcTask */
   adcTaskHandle = osThreadNew(adcTaskStart, NULL, &adcTask_attributes);
+
+  /* creation of muxswTask */
+  muxswTaskHandle = osThreadNew(muxswTaskStart, NULL, &muxswTask_attributes);
+
+  /* creation of buttonTask */
+  buttonTaskHandle = osThreadNew(buttonTaskStart, NULL, &buttonTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -144,23 +166,23 @@ void StartDefaultTask(void *argument)
   /* USER CODE END StartDefaultTask */
 }
 
-/* USER CODE BEGIN Header_StartStatusTask */
+/* USER CODE BEGIN Header_statusTaskStart */
 /**
 * @brief Function implementing the statusTask thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartStatusTask */
-void StartStatusTask(void *argument)
+/* USER CODE END Header_statusTaskStart */
+void statusTaskStart(void *argument)
 {
-  /* USER CODE BEGIN StartStatusTask */
+  /* USER CODE BEGIN statusTaskStart */
   /* Infinite loop */
   for(;;)
   {
       HAL_GPIO_TogglePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin);
       osDelay(500);
   }
-  /* USER CODE END StartStatusTask */
+  /* USER CODE END statusTaskStart */
 }
 
 /* Private application code --------------------------------------------------*/

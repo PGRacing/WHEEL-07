@@ -21,18 +21,17 @@
 #include "adc.h"
 
 /* USER CODE BEGIN 0 */
-#include "FreeRTOS.h"
 #include "task.h"
 #include "cmsis_os2.h"
 #include "main.h"
 #include "tim.h"
 
+xTaskHandle adcTaskHandleLocal;
+SemaphoreHandle_t adcConvReadySemaphore = NULL;
 /* USER CODE END 0 */
 
 ADC_HandleTypeDef hadc1;
 DMA_HandleTypeDef hdma_adc1;
-
-TaskHandle_t adcTaskHandleLocal = NULL;
 
 /* ADC1 init function */
 void MX_ADC1_Init(void)
@@ -187,7 +186,6 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 
 /* USER CODE BEGIN 1 */
 uint32_t adcRawData[ADC_CHANNEL_COUNT];
-uint32_t adcAvgData[ADC_CHANNEL_COUNT];
 uint16_t avgCounter = 0;
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
@@ -195,8 +193,9 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
     BaseType_t  checkIfYieldRequired;
 
     /* Can be possibly changed to semaphore */
-    checkIfYieldRequired = xTaskResumeFromISR(adcTaskHandleLocal);
-    portYIELD_FROM_ISR(checkIfYieldRequired);
+    static portBASE_TYPE xHigherPriorityTaskWoken;
+    xHigherPriorityTaskWoken = pdFALSE;
+    xSemaphoreGiveFromISR(adcConvReadySemaphore, &xHigherPriorityTaskWoken);
 }
 
 void adcStart()
@@ -212,6 +211,7 @@ void adcStart()
 void adcTaskStart(void *argument)
 {
     /* USER CODE BEGIN adcTaskStart */
+    adcConvReadySemaphore = xSemaphoreCreateBinary();
     adcTaskHandleLocal = xTaskGetCurrentTaskHandle();
     adcStart();
     /* Infinite loop */
@@ -219,20 +219,6 @@ void adcTaskStart(void *argument)
     {
         vTaskSuspend(NULL);
         /* Do something with data */
-        for(int i=0; i < ADC_CHANNEL_COUNT; i++)
-        {
-            adcAvgData[i] += adcRawData[i];
-        }
-
-        if(avgCounter == AVERAGING_ITERNATION_COUNT)
-        {
-            for(int i=0; i < ADC_CHANNEL_COUNT; i++)
-            {
-                adcAvgData[i] /= AVERAGING_ITERNATION_COUNT;
-            }
-        }
-
-        avgCounter++;
     }
     /* USER CODE END adcTaskStart */
 }

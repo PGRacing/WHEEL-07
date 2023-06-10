@@ -29,7 +29,8 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "FreeRTOS.h"
+#include "semphr.h"
 /* USER CODE END Includes */
 
 extern ADC_HandleTypeDef hadc1;
@@ -43,7 +44,7 @@ void MX_ADC1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 extern uint32_t adcRawData[ADC_CHANNEL_COUNT];
-extern uint32_t adcAvgData[ADC_CHANNEL_COUNT];
+extern SemaphoreHandle_t adcConvReadySemaphore;
 
 /**
 * @brief Function implementing the adcTask thread.
