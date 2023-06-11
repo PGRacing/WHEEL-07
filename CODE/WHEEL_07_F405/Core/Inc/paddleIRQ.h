@@ -7,4 +7,4 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
 void paddleIRQTaskStart(void *argument);
 
 /* Debouncing timers handler */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
+void debouncingTIMCallback(TIM_HandleTypeDef *htim);
