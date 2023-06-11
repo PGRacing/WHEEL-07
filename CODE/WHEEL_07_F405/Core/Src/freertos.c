@@ -45,7 +45,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-
+/* Definitions for paddleIUpDebounceTimer */
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -75,13 +75,6 @@ const osThreadAttr_t muxswTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
-/* Definitions for buttonTask */
-osThreadId_t buttonTaskHandle;
-const osThreadAttr_t buttonTask_attributes = {
-  .name = "buttonTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityLow,
-};
 /* Definitions for paddleIRQTask */
 osThreadId_t paddleIRQTaskHandle;
 const osThreadAttr_t paddleIRQTask_attributes = {
@@ -92,14 +85,12 @@ const osThreadAttr_t paddleIRQTask_attributes = {
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
-
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
 void statusTaskStart(void *argument);
 extern void adcTaskStart(void *argument);
 extern void muxswTaskStart(void *argument);
-extern void buttonTaskStart(void *argument);
 extern void paddleIRQTaskStart(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -142,9 +133,6 @@ void MX_FREERTOS_Init(void) {
 
   /* creation of muxswTask */
   muxswTaskHandle = osThreadNew(muxswTaskStart, NULL, &muxswTask_attributes);
-
-  /* creation of buttonTask */
-  //buttonTaskHandle = osThreadNew(buttonTaskStart, NULL, &buttonTask_attributes);
 
   /* creation of paddleIRQTask */
   paddleIRQTaskHandle = osThreadNew(paddleIRQTaskStart, NULL, &paddleIRQTask_attributes);

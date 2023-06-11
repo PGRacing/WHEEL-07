@@ -111,6 +111,8 @@ int main(void)
   MX_CAN1_Init();
   MX_ADC1_Init();
   MX_TIM3_Init();
+  MX_TIM13_Init();
+  MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
   HAL_CAN_Start(&hcan1);
 
