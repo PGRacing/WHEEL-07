@@ -82,6 +82,13 @@ const osThreadAttr_t buttonTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
+/* Definitions for paddleIRQTask */
+osThreadId_t paddleIRQTaskHandle;
+const osThreadAttr_t paddleIRQTask_attributes = {
+  .name = "paddleIRQTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityRealtime,
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -93,6 +100,7 @@ void statusTaskStart(void *argument);
 extern void adcTaskStart(void *argument);
 extern void muxswTaskStart(void *argument);
 extern void buttonTaskStart(void *argument);
+extern void paddleIRQTaskStart(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -136,7 +144,10 @@ void MX_FREERTOS_Init(void) {
   muxswTaskHandle = osThreadNew(muxswTaskStart, NULL, &muxswTask_attributes);
 
   /* creation of buttonTask */
-  buttonTaskHandle = osThreadNew(buttonTaskStart, NULL, &buttonTask_attributes);
+  //buttonTaskHandle = osThreadNew(buttonTaskStart, NULL, &buttonTask_attributes);
+
+  /* creation of paddleIRQTask */
+  paddleIRQTaskHandle = osThreadNew(paddleIRQTaskStart, NULL, &paddleIRQTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */

@@ -29,6 +29,7 @@
 /* USER CODE BEGIN Includes */
 #include "rotary.h"
 #include "adc.h"
+#include "paddleIRQ.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

@@ -61,8 +61,10 @@ void Error_Handler(void);
 #define STATUS_LED_GPIO_Port GPIOC
 #define PADDLE_DOWN_Pin GPIO_PIN_4
 #define PADDLE_DOWN_GPIO_Port GPIOA
+#define PADDLE_DOWN_EXTI_IRQn EXTI4_IRQn
 #define PADDLE_UP_Pin GPIO_PIN_5
 #define PADDLE_UP_GPIO_Port GPIOA
+#define PADDLE_UP_EXTI_IRQn EXTI9_5_IRQn
 #define WHEEL_BTN1_Pin GPIO_PIN_6
 #define WHEEL_BTN1_GPIO_Port GPIOA
 #define WHEEL_BTN2_Pin GPIO_PIN_7
