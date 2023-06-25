@@ -21,44 +21,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79b4f90b-1190-4469-9fde-8ca2ef4f8f1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Core/Inc/canhandler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Inc/ubuttons.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/canhandler.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Src/ubuttons.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/varviewer_wheel.tsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/FreeRTOSConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/FreeRTOSConfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/can.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/can.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/rotary.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/rotary.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/adc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/adc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/can.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/can.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/paddleIRQ.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/paddleIRQ.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/rotary.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/rotary.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WHEEL_07_F405.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/WHEEL_07_F405.ioc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-1e755fd7b173443ec222.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-06-11T01-15-26-0246.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-WHEEL_07_F405.elf-Debug-58ab2a6e737be8b64b6e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/adc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/adc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/can.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/can.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/freertos.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/freertos.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/paddleIRQ.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/paddleIRQ.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/rotary.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/rotary.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/f405_studio.tsp" beforeDir="false" afterPath="$PROJECT_DIR$/f405_studio.tsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +114,7 @@
       <workItem from="1687394603098" duration="66000" />
       <workItem from="1687622072535" duration="647000" />
       <workItem from="1687640590298" duration="41000" />
-      <workItem from="1687640668237" duration="10621000" />
+      <workItem from="1687640668237" duration="10737000" />
     </task>
     <servers />
   </component>

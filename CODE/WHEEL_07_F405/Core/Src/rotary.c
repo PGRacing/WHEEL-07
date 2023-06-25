@@ -250,6 +250,6 @@ void muxswNotifyTaskStart(void *argument)
             muxswPrepareCANPackage(NULL);
             muxswPushCANPackageToQueue();
         }
-       osDelay(1000);
+       osDelay(pdMS_TO_TICKS(1000));
     }
 }
