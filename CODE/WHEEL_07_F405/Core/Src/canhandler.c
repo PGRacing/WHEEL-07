@@ -10,6 +10,20 @@ uint32_t can1TxMailbox[4];
 /* CAN2 TxMailbox */
 uint32_t can2TxMailbox[4];
 
+/* Welcome message */
+const CAN_TxHeaderTypeDef pnpCANHeader =
+        {
+                .DLC = 8,
+                .ExtId = 0,
+                .IDE = CAN_ID_STD,
+                .RTR = CAN_RTR_DATA,
+                .StdId = 0x500,
+                .TransmitGlobalTime = DISABLE,
+        };
+
+uint8_t pnpCANData[8] = {0xAA};
+
+
 void can1TaskStart(void *argument)
 {
     /* Create queue for CAN1 data*/
@@ -21,6 +35,9 @@ void can1TaskStart(void *argument)
 
     /* Start CAN1 */
     HAL_CAN_Start(&hcan1);
+
+    osDelay(pdMS_TO_TICKS(100));
+    HAL_CAN_AddTxMessage(&hcan1, &(pnpCANHeader), pnpCANData, can1TxMailbox);
 
     /* Incoming package */
     CAN_TxPackageType canPackage;
@@ -51,6 +68,9 @@ void can2TaskStart(void *argument)
 
     /* Start CAN2 */
     HAL_CAN_Start(&hcan2);
+
+    osDelay(pdMS_TO_TICKS(100));
+    HAL_CAN_AddTxMessage(&hcan2, &(pnpCANHeader), pnpCANData, can2TxMailbox);
 
     /* Incoming package */
     CAN_TxPackageType canPackage;
