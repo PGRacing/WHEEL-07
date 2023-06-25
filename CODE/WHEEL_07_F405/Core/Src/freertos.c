@@ -82,6 +82,34 @@ const osThreadAttr_t paddleIRQTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityRealtime,
 };
+/* Definitions for ubuttonsTask */
+osThreadId_t ubuttonsTaskHandle;
+const osThreadAttr_t ubuttonsTask_attributes = {
+  .name = "ubuttonsTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
+/* Definitions for can1Task */
+osThreadId_t can1TaskHandle;
+const osThreadAttr_t can1Task_attributes = {
+  .name = "can1Task",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for can2Task */
+osThreadId_t can2TaskHandle;
+const osThreadAttr_t can2Task_attributes = {
+  .name = "can2Task",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for muxswNotifyTask */
+osThreadId_t muxswNotifyTaskHandle;
+const osThreadAttr_t muxswNotifyTask_attributes = {
+  .name = "muxswNotifyTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -92,6 +120,10 @@ void statusTaskStart(void *argument);
 extern void adcTaskStart(void *argument);
 extern void muxswTaskStart(void *argument);
 extern void paddleIRQTaskStart(void *argument);
+extern void ubuttonsTaskStart(void *argument);
+extern void can1TaskStart(void *argument);
+extern void can2TaskStart(void *argument);
+extern void muxswNotifyTaskStart(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -137,6 +169,18 @@ void MX_FREERTOS_Init(void) {
   /* creation of paddleIRQTask */
   paddleIRQTaskHandle = osThreadNew(paddleIRQTaskStart, NULL, &paddleIRQTask_attributes);
 
+  /* creation of ubuttonsTask */
+  ubuttonsTaskHandle = osThreadNew(ubuttonsTaskStart, NULL, &ubuttonsTask_attributes);
+
+  /* creation of can1Task */
+  can1TaskHandle = osThreadNew(can1TaskStart, NULL, &can1Task_attributes);
+
+  /* creation of can2Task */
+  can2TaskHandle = osThreadNew(can2TaskStart, NULL, &can2Task_attributes);
+
+  /* creation of muxswNotifyTask */
+  muxswNotifyTaskHandle = osThreadNew(muxswNotifyTaskStart, NULL, &muxswNotifyTask_attributes);
+
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -157,6 +201,7 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+  //osTimerStart(testTimerHandle, pdMS_TO_TICKS(20));
   /* Infinite loop */
   for(;;)
   {
@@ -179,13 +224,12 @@ void statusTaskStart(void *argument)
   for(;;)
   {
       HAL_GPIO_TogglePin(STATUS_LED_GPIO_Port, STATUS_LED_Pin);
-      osDelay(500);
+      osDelay(100);
   }
   /* USER CODE END statusTaskStart */
 }
 
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
-
 /* USER CODE END Application */
 

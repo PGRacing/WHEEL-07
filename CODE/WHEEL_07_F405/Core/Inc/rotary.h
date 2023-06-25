@@ -19,6 +19,8 @@ typedef enum {
     SW_INVALID     = 13U,
 } muxswStatesEnum;
 
+
+
 /**
 * @brief Function implementing the muxswTask thread.
 * @param argument: Not used

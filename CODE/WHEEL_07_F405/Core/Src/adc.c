@@ -195,7 +195,9 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
     /* Can be possibly changed to semaphore */
     static portBASE_TYPE xHigherPriorityTaskWoken;
     xHigherPriorityTaskWoken = pdFALSE;
-    xSemaphoreGiveFromISR(adcConvReadySemaphore, &xHigherPriorityTaskWoken);
+
+    if(adcConvReadySemaphore != NULL)
+        xSemaphoreGiveFromISR(adcConvReadySemaphore, &xHigherPriorityTaskWoken);
 }
 
 void adcStart()
@@ -212,6 +214,10 @@ void adcTaskStart(void *argument)
 {
     /* USER CODE BEGIN adcTaskStart */
     adcConvReadySemaphore = xSemaphoreCreateBinary();
+    if(adcConvReadySemaphore == NULL)
+        /* Error creating semaphore -> heap too small [?] */
+        __NOP();
+
     adcTaskHandleLocal = xTaskGetCurrentTaskHandle();
     adcStart();
     /* Infinite loop */

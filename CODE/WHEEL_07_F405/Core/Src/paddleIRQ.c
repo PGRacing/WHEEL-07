@@ -108,13 +108,11 @@ void debouncingTIMCallback(TIM_HandleTypeDef *htim)
 {
     if(htim == &htim13)
     {
-        __NOP();
         HAL_TIM_Base_Stop_IT(&htim13);
     }
 
     if(htim == &htim14)
     {
-        __NOP();
         HAL_TIM_Base_Stop_IT(&htim14);
     }
 

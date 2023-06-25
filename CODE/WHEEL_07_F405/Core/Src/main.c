@@ -113,24 +113,10 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM13_Init();
   MX_TIM14_Init();
+  MX_CAN2_Init();
   /* USER CODE BEGIN 2 */
-  HAL_CAN_Start(&hcan1);
 
-  HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
-
-  TxHeader.DLC = 4;
-  TxHeader.ExtId = 0;
-  TxHeader.IDE = CAN_ID_STD;
-  TxHeader.RTR = CAN_RTR_DATA;
-  TxHeader.StdId = 0x446;
-  TxHeader.TransmitGlobalTime = DISABLE;
-
-  TxData[0] = 0x01;
-  TxData[1] = 0x02;
-  TxData[2] = 0x03;
-  TxData[3] = 0x04;
-
-
+  //HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
 
   /* USER CODE END 2 */
 
