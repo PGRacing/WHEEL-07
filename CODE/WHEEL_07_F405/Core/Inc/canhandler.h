@@ -2,6 +2,11 @@
 #include "queue.h"
 #include "can.h"
 
+/* CAN1 TxMailbox */
+extern uint32_t can1TxMailbox[4];
+
+/* CAN2 TxMailbox */
+extern uint32_t can2TxMailbox[4];
 
 typedef struct
 {

@@ -246,11 +246,13 @@ void muxswNotifyTaskStart(void *argument)
     /* Infinite loop */
     for (;;)
     {
+#ifdef MUXSW_NOTIFICATION_ENABLED
         if(muxswModuleInitalized == 0x01)
         {
             muxswPrepareCANPackage(NULL);
             muxswPushCANPackageToQueue();
         }
+#endif
        osDelay(pdMS_TO_TICKS(MUXSW_NOTIFICATION_PERIOD));
     }
 }

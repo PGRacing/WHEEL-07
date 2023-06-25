@@ -11,7 +11,8 @@ uint32_t can1TxMailbox[4];
 uint32_t can2TxMailbox[4];
 
 /* Welcome message */
-const CAN_TxHeaderTypeDef pnpCANHeader =
+/* TODO add code stamp to pnpHeader */
+CAN_TxHeaderTypeDef pnpCANHeader =
         {
                 .DLC = 8,
                 .ExtId = 0,
@@ -36,6 +37,7 @@ void can1TaskStart(void *argument)
     /* Start CAN1 */
     HAL_CAN_Start(&hcan1);
 
+    /* Send CAN hello message */
     osDelay(pdMS_TO_TICKS(100));
     HAL_CAN_AddTxMessage(&hcan1, &(pnpCANHeader), pnpCANData, can1TxMailbox);
 
@@ -69,6 +71,7 @@ void can2TaskStart(void *argument)
     /* Start CAN2 */
     HAL_CAN_Start(&hcan2);
 
+    /* Send CAN hello message */
     osDelay(pdMS_TO_TICKS(100));
     HAL_CAN_AddTxMessage(&hcan2, &(pnpCANHeader), pnpCANData, can2TxMailbox);
 

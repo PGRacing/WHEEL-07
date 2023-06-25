@@ -3,6 +3,7 @@
 #include "tim.h"
 #include "cmsis_os2.h"
 #include "task.h"
+#include "canhandler.h"
 
 #define DEBOUNCING_COUNT 10
 
@@ -49,6 +50,18 @@ paddleStatusType paddles[2] =
 
         };
 
+/*!< *** PADDLE CAN PART *** */
+CAN_TxHeaderTypeDef paddlesCANHeader =
+        {
+                .DLC = 2,
+                .ExtId = 0,
+                .IDE = CAN_ID_STD,
+                .RTR = CAN_RTR_DATA,
+                .StdId = 0x100,
+                .TransmitGlobalTime = DISABLE,
+        };
+
+uint8_t paddlesCANData[2] = {0xFF};
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
@@ -65,11 +78,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     }
 }
 
+/*!< Translate current GPIO state to our paddle state */
 void HALtoPaddleState(paddleStatusType* paddle)
 {
-
     switch (HAL_GPIO_ReadPin(paddle->GPIO_Port, paddle->GPIO_Pin)){
-
         case GPIO_PIN_RESET:
             paddle->state = PADDLE_CLICKED;
             break;
@@ -79,6 +91,31 @@ void HALtoPaddleState(paddleStatusType* paddle)
     };
 }
 
+/*!< Send data to CAN Asap*/
+void paddlesCANInstant()
+{
+    /* As simple as possible */
+    paddlesCANData[0] = paddles[0].state;
+    paddlesCANData[1] = paddles[1].state;
+    HAL_CAN_AddTxMessage(&hcan1, &paddlesCANHeader, paddlesCANData, can1TxMailbox);
+}
+
+/*!< Alternative way to send data to can through queue */
+void paddlesCANQueue()
+{
+    CAN_TxPackageType paddlesCANPackage = {.header = paddlesCANHeader, .data = paddlesCANData};
+    if(can1QueueHandle != NULL && xQueueSend(can1QueueHandle, &paddlesCANData, portMAX_DELAY) != pdPASS)
+    {
+        /* Problem with pushing data to queue */
+        __NOP();
+    }else if(can1QueueHandle == NULL)
+    {
+        /* Queue handle does not exist yet */
+        __NOP();
+    };
+}
+
+/*!< paddleIRQTask entry point */
 void paddleIRQTaskStart(void *argument)
 {
     paddleTaskHandlerLocal = xTaskGetCurrentTaskHandle();
@@ -89,7 +126,6 @@ void paddleIRQTaskStart(void *argument)
         HALtoPaddleState(&(paddles[i]));
     }
 
-
     for(;;)
     {
         //suspend this task
@@ -99,6 +135,8 @@ void paddleIRQTaskStart(void *argument)
             if(paddles[i].state == PADDLE_DEBOUNCING)
             {
                 HALtoPaddleState(&(paddles[i]));
+                /* Send CAN data about paddle asap */
+                paddlesCANInstant();
             }
         }
     }

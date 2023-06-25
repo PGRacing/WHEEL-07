@@ -1,6 +1,7 @@
 #define MUXSW_COUNT 1
 #define MUXSW_STATE_COUNT 14
 #define MUXSW_NOTIFICATION_PERIOD 1000
+//#define MUXSW_NOTIFICATION_ENABLED 1
 
 /*!< Possible MUXSW states */
 typedef enum {
