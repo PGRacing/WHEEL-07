@@ -110,6 +110,13 @@ const osThreadAttr_t muxswNotifyTask_attributes = {
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityLow,
 };
+/* Definitions for ubtnNotifyTask */
+osThreadId_t ubtnNotifyTaskHandle;
+const osThreadAttr_t ubtnNotifyTask_attributes = {
+  .name = "ubtnNotifyTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityLow,
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -124,6 +131,7 @@ extern void ubuttonsTaskStart(void *argument);
 extern void can1TaskStart(void *argument);
 extern void can2TaskStart(void *argument);
 extern void muxswNotifyTaskStart(void *argument);
+extern void ubuttonsNotifyTaskStart(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -180,6 +188,9 @@ void MX_FREERTOS_Init(void) {
 
   /* creation of muxswNotifyTask */
   muxswNotifyTaskHandle = osThreadNew(muxswNotifyTaskStart, NULL, &muxswNotifyTask_attributes);
+
+  /* creation of ubtnNotifyTask */
+  ubtnNotifyTaskHandle = osThreadNew(ubuttonsNotifyTaskStart, NULL, &ubtnNotifyTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */

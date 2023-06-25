@@ -26,6 +26,7 @@ struct muxswType_{
     void (*callback)(volatile muxswType* muxswPtr);
 };
 
+/*!< muxSW ADC translation register */
 const muxswConfigType muxswConfigRegister1[MUXSW_STATE_COUNT] = {
         [SW_POSITION_1] = {
                 .adcExpectedReading = 315U,
@@ -109,7 +110,7 @@ const CAN_TxHeaderTypeDef muxswCANHeader =
                 .TransmitGlobalTime = DISABLE,
         };
 
-/* !!!!CANData should be global or declared on root level!!!! */
+/*!!!!CANData should be global or declared on root level!!!! */
 uint8_t muxswCANData[5] = {0xFF};
 
 /* muxsw CAN package that will be used for queue */
@@ -141,7 +142,7 @@ void muxswPrepareCANPackage(volatile muxswType* muxswPtr)
     }
 }
 
-/* Add data to second can queue */
+/*!< Add data to CAN2 queue */
 HAL_StatusTypeDef muxswPushCANPackageToQueue()
 {
     if(can2QueueHandle != NULL && xQueueSend(can2QueueHandle, &muxswCANPackage, portMAX_DELAY) != pdPASS)
@@ -162,7 +163,7 @@ void muxswStateChanged(volatile muxswType* muxswPtr)
 }
 
 
-/* Operate whole checking process of single muxSwitch */
+/*!< Operate whole checking process of single muxSwitch */
 void muxswInRange(volatile muxswType* muxswPtr)
 {
     uint8_t plausibiltiyCounter = 0;
@@ -216,7 +217,7 @@ void muxswInRange(volatile muxswType* muxswPtr)
     }
 }
 
-/* muxswTask entry point */
+/*!< muxswTask entry point */
 void muxswTaskStart(void *argument)
 {
     /* Add same callback to all rotaries */
@@ -239,7 +240,7 @@ void muxswTaskStart(void *argument)
     }
 }
 
-/* muxswNotifyTask entry point */
+/*!< muxswNotifyTask entry point */
 void muxswNotifyTaskStart(void *argument)
 {
     /* Infinite loop */
@@ -250,6 +251,6 @@ void muxswNotifyTaskStart(void *argument)
             muxswPrepareCANPackage(NULL);
             muxswPushCANPackageToQueue();
         }
-       osDelay(pdMS_TO_TICKS(1000));
+       osDelay(pdMS_TO_TICKS(MUXSW_NOTIFICATION_PERIOD));
     }
 }
