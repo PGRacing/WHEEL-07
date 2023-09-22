@@ -61,24 +61,28 @@ volatile ubuttonType ubuttonsRegister[UBUTTONS_COUNT] = {
             .pinState = GPIO_PIN_SET,
             .pressTime = 0
     },
-   /* [BUTTON_B] = {
+   [BUTTON_B] = {
+           .GPIO_Port = WHEEL_BTN6_GPIO_Port,
+           .GPIO_Pin  = WHEEL_BTN6_Pin,
+           .state     = UBUTTON_UNKNOWN,
+           .clickedCallback  = NULL,
+           .unclickedCallback = NULL,
+           .debounceActive = 0x00,
+           .debounceCount = 0,
+           .pinState = GPIO_PIN_SET,
+           .pressTime = 0
+    },
+    [BUTTON_C] = {
             .GPIO_Port = WHEEL_BTN1_GPIO_Port,
             .GPIO_Pin  = WHEEL_BTN1_Pin,
             .state     = UBUTTON_UNKNOWN,
-            .callback  = NULL,
+            .clickedCallback  = NULL,
+            .unclickedCallback = NULL,
             .debounceActive = 0x00,
             .debounceCount = 0,
-            .pinState = GPIO_PIN_SET
+            .pinState = GPIO_PIN_SET,
+            .pressTime = 0
     },
-    [BUTTON_C] = {
-            .GPIO_Port = WHEEL_BTN3_GPIO_Port,
-            .GPIO_Pin  = WHEEL_BTN3_Pin,
-            .state     = UBUTTON_UNKNOWN,
-            .callback  = NULL,
-            .debounceActive = 0x00,
-            .debounceCount = 0,
-            .pinState = GPIO_PIN_SET
-    },*/
     };
 
 /* *** BUTTON CAN PART *** */
@@ -88,21 +92,21 @@ const CAN_TxHeaderTypeDef ubuttonsCANHeader =
                 .ExtId = 0,
                 .IDE = CAN_ID_STD,
                 .RTR = CAN_RTR_DATA,
-                .StdId = 0x447,
+                .StdId = 0x201,
                 .TransmitGlobalTime = DISABLE,
         };
 
 /*!!!! CANData should be global or declared on root level!!!! */
 uint8_t ubuttonsCANData[8] = {0xFF};
 
-/* muxsw CAN package that will be used for queue */
+/* button CAN package that will be used for queue */
 CAN_TxPackageType ubuttonsCANPackage =
         {
                 .header = ubuttonsCANHeader,
                 .data = ubuttonsCANData
         };
 
-CAN_TxHeaderTypeDef ubuttonsHoldCANHeader =
+const CAN_TxHeaderTypeDef ubuttonsHoldCANHeader =
         {
                 .DLC = 4,
                 .ExtId = 0,
@@ -111,6 +115,16 @@ CAN_TxHeaderTypeDef ubuttonsHoldCANHeader =
                 .StdId = 0x449,
                 .TransmitGlobalTime = DISABLE,
         };
+
+uint8_t ubuttonsHoldCANData[8] = {0xFF};
+
+/* button hold CAN package that will be used for queue */
+CAN_TxPackageType ubuttonsHoldCANPackage =
+        {
+                .header = ubuttonsHoldCANHeader,
+                .data = ubuttonsHoldCANData
+        };
+
 
 void ubuttonsPrepareCANPackage(volatile ubuttonType* ubuttonPtr)
 {
@@ -136,13 +150,12 @@ void ubuttonsPrepareCANPackage(volatile ubuttonType* ubuttonPtr)
 
 void ubuttonsPrepareHoldCANPackage()
 {
-    ubuttonsCANPackage.header = ubuttonsHoldCANHeader;
     /*!<
      * Hold time for each button as multiple of UBUTTONS_PRESS_NOTIFICATION_PERIOD
      * */
     for(uint8_t i = 0; i < UBUTTONS_COUNT; i++)
     {
-        ubuttonsCANPackage.data[i] = ubuttonsRegister[i].pressTime;
+        ubuttonsHoldCANPackage.data[i] = ubuttonsRegister[i].pressTime;
     }
 }
 
@@ -150,6 +163,20 @@ void ubuttonsPrepareHoldCANPackage()
 HAL_StatusTypeDef ubuttonsPushCANPackageToQueue()
 {
     if(can2QueueHandle != NULL && xQueueSend(can2QueueHandle, &ubuttonsCANPackage, portMAX_DELAY) != pdPASS)
+    {
+        /* Problem with pushing data to queue */
+        __NOP();
+    }else if(can2QueueHandle == NULL)
+    {
+        /* Queue handle does not exist yet */
+        __NOP();
+    };
+}
+
+/*!< Add data to CAN2 queue */
+HAL_StatusTypeDef ubuttonsPushHoldCANPackageToQueue()
+{
+    if(can2QueueHandle != NULL && xQueueSend(can2QueueHandle, &ubuttonsHoldCANPackage, portMAX_DELAY) != pdPASS)
     {
         /* Problem with pushing data to queue */
         __NOP();
@@ -181,13 +208,15 @@ void ubuttonsReadState()
         }
 
         /*!< Reset if not in debouncing and not clicked at the moment */
-        if(!ubuttonsRegister[i].debounceActive && gpioState == GPIO_PIN_SET)
+        if(ubuttonsRegister[i].debounceActive == 0x00 && gpioState == GPIO_PIN_SET)
         {
             if(ubuttonsRegister[i].state != UBUTTON_UNCLICKED && ubuttonsRegister[i].unclickedCallback != NULL)
-                    ubuttonsRegister[i].unclickedCallback(&(ubuttonsRegister[i]));
+            {
+                ubuttonsRegister[i].state = UBUTTON_UNCLICKED;
+                ubuttonsRegister[i].unclickedCallback(&(ubuttonsRegister[i]));
+            }
 
             ubuttonsRegister[i].state = UBUTTON_UNCLICKED;
-            ubuttonsRegister[i].debounceActive = 0x00;
             ubuttonsRegister[i].debounceCount = 0;
         }
 
@@ -199,8 +228,10 @@ void ubuttonsReadState()
             if(gpioState == GPIO_PIN_RESET)
             {
                 if(ubuttonsRegister[i].state != UBUTTON_CLICKED && ubuttonsRegister[i].clickedCallback != NULL)
+                {
+                    ubuttonsRegister[i].state = UBUTTON_CLICKED;
                     ubuttonsRegister[i].clickedCallback(&(ubuttonsRegister[i]));
-
+                }
                 ubuttonsRegister[i].state = UBUTTON_CLICKED;
             }
             /*!< Debouncing gone wrong */
@@ -229,6 +260,7 @@ void ubuttonUnclickedCallback(volatile ubuttonType* btn)
 
 void ubuttonsHoldTimerCallback(void* arguments)
 {
+    /*
     uint8_t anyActive = 0x00;
     for(int i=0; i < UBUTTONS_COUNT; i++)
     {
@@ -242,8 +274,9 @@ void ubuttonsHoldTimerCallback(void* arguments)
     if(anyActive != 0x00)
     {
         ubuttonsPrepareHoldCANPackage();
-        ubuttonsPushCANPackageToQueue();
+        ubuttonsPushHoldCANPackageToQueue();
     }
+    */
 }
 
 _Noreturn void ubuttonsTaskStart(void* arguments)
@@ -261,6 +294,12 @@ _Noreturn void ubuttonsTaskStart(void* arguments)
 
     ubuttonsRegister[0].clickedCallback = ubuttonClickedCallback;
     ubuttonsRegister[0].unclickedCallback = ubuttonUnclickedCallback;
+
+    ubuttonsRegister[1].clickedCallback = ubuttonClickedCallback;
+    ubuttonsRegister[1].unclickedCallback = ubuttonUnclickedCallback;
+
+    ubuttonsRegister[2].clickedCallback = ubuttonClickedCallback;
+    ubuttonsRegister[2].unclickedCallback = ubuttonUnclickedCallback;
 
     ubuttonsModuleInitalized = 0x01;
 

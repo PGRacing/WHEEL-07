@@ -18,7 +18,7 @@ CAN_TxHeaderTypeDef pnpCANHeader =
                 .ExtId = 0,
                 .IDE = CAN_ID_STD,
                 .RTR = CAN_RTR_DATA,
-                .StdId = 0x500,
+                .StdId = 0x200,
                 .TransmitGlobalTime = DISABLE,
         };
 

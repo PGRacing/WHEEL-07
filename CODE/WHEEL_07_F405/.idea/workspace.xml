@@ -23,22 +23,14 @@
     <list default="true" id="79b4f90b-1190-4469-9fde-8ca2ef4f8f1c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/FreeRTOSConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/FreeRTOSConfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/canhandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/canhandler.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/rotary.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/rotary.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/ubuttons.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/ubuttons.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/canhandler.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/canhandler.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/paddleIRQ.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/paddleIRQ.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/rotary.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/rotary.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/ubuttons.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/ubuttons.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WHEEL_07_F405.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/WHEEL_07_F405.ioc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-06-25T02-33-38-0370.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/canhandler.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/canhandler.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/paddleIRQ.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/paddleIRQ.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/rotary.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/rotary.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/ubuttons.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Core/Src/ubuttons.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WHEEL_07_F405.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" afterDir="false" />
@@ -46,6 +38,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WHEEL_07_F405.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-05-04_204828.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07-backups/WHEEL-07-2023-05-04_213300.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07.kicad_prl" beforeDir="false" afterPath="$PROJECT_DIR$/../../PCB/WHEEL-07/WHEEL-07.kicad_prl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PCB/WHEEL-07/fp-info-cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../PCB/WHEEL-07/fp-info-cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +50,22 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="EmbeddedSvdWindowState">
+    <option name="columnWidths">
+      <list>
+        <option value="187" />
+        <option value="82" />
+        <option value="1157" />
+      </list>
+    </option>
+    <option name="columnOrder">
+      <list>
+        <option value="Name" />
+        <option value="Value" />
+        <option value="Description" />
+      </list>
+    </option>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -99,11 +111,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="F405RGT6" type="com.jetbrains.cidr.embedded.customgdbserver.type" factoryName="com.jetbrains.cidr.embedded.customgdbserver.factory" PROGRAM_PARAMS="-p 7220 -cp &quot;C:\ST\STM32CubeIDE_1.8.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.0.301.202207041506\tools\bin&quot; --frequency 4000 --swd" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="WHEEL_07_F405" TARGET_NAME="WHEEL_07_F405.elf" version="1" RUN_TARGET_PROJECT_NAME="WHEEL_07_F405" RUN_TARGET_NAME="WHEEL_07_F405.elf">
       <custom-gdb-server version="1" gdb-connect="tcp::7220" executable="C:\ST\STM32CubeIDE_1.8.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.0.300.202203231527\tools\bin\ST-LINK_gdbserver.exe" warmup-ms="0" download-type="UPDATED_ONLY" reset-cmd="monitor reset" reset-type="AFTER_DOWNLOAD">
         <debugger kind="GDB" isBundled="true" />
@@ -138,7 +145,10 @@
       <workItem from="1687622072535" duration="647000" />
       <workItem from="1687640590298" duration="41000" />
       <workItem from="1687640668237" duration="23603000" />
-      <workItem from="1687706983492" duration="2414000" />
+      <workItem from="1687706983492" duration="11992000" />
+      <workItem from="1688050715318" duration="144000" />
+      <workItem from="1691946666536" duration="5753000" />
+      <workItem from="1695152870846" duration="120000" />
     </task>
     <servers />
   </component>
@@ -164,13 +174,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Core/Src/canhandler.c</url>
-          <line>84</line>
-          <option name="timeStamp" value="143" />
+          <line>54</line>
+          <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Core/Src/paddleIRQ.c</url>
-          <line>136</line>
-          <option name="timeStamp" value="145" />
+          <line>99</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/paddleIRQ.c</url>
+          <line>98</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/ubuttons.c</url>
+          <line>249</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/ubuttons.c</url>
+          <line>194</line>
+          <option name="timeStamp" value="152" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -178,6 +203,9 @@
       <configuration name="com.jetbrains.cidr.embedded.customgdbserver.type">
         <watch expression="buttonsRegister[i].debounceCount" />
       </configuration>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/Core/Src/ubuttons.c" line="146">
+        <watch expression="ubuttonsRegister[i].state" language="ObjectiveC" />
+      </inline-watch>
     </watches-manager>
   </component>
 </project>
