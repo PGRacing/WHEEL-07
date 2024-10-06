@@ -96,7 +96,16 @@ volatile muxswType muxswRegister[MUXSW_COUNT] =
                         .validityCount = {0},
                         .validityThresh = 20,
                         .callback = NULL,
-                }
+                },
+				{
+						.adcID = 1U,
+						.swRawData = (uint16_t *)&adcRawData[1],
+						.state = SW_UNKNOWN,
+						.muxswConfigRegister = muxswConfigRegister1,
+						.validityCount = {0},
+						.validityThresh = 20,
+						.callback = NULL,
+				}
         };
 
 /* *** MUXSW CAN PART *** */
@@ -149,11 +158,14 @@ HAL_StatusTypeDef muxswPushCANPackageToQueue()
     {
         /* Problem with pushing data to queue */
         __NOP();
+        return HAL_ERROR;
     }else if(can2QueueHandle == NULL)
     {
         /* Queue handle does not exist yet */
         __NOP();
-    };
+        return HAL_ERROR;
+    }
+    return HAL_OK;
 }
 
 void muxswStateChanged(volatile muxswType* muxswPtr)
@@ -234,7 +246,7 @@ void muxswTaskStart(void *argument)
             muxswModuleInitalized = 0x01;
             for(uint8_t i = 0; i < MUXSW_COUNT; i++)
             {
-                muxswInRange(&muxswRegister[0]);
+                muxswInRange(&muxswRegister[i]);
             }
         }
     }
