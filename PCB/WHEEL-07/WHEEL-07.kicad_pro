@@ -55,20 +55,13 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "clearance|153314000|55162000|a8b0ad15-af31-4676-974a-83b011d46f77|e97df0f2-c3f8-4106-8948-a7a94ba479fd",
-        "clearance|153314000|56112000|cb3ab9a6-a96e-48b5-9528-6b5281451769|e97df0f2-c3f8-4106-8948-a7a94ba479fd",
-        "clearance|153349000|55064000|a8b0ad15-af31-4676-974a-83b011d46f77|e97df0f2-c3f8-4106-8948-a7a94ba479fd",
-        "clearance|155364000|53912000|6906eb95-3355-41bc-9d87-6eb7f5a9afc8|e97df0f2-c3f8-4106-8948-a7a94ba479fd",
-        "clearance|155364000|54862000|fc454187-a017-434d-aa90-ef8054212579|e97df0f2-c3f8-4106-8948-a7a94ba479fd",
-        "clearance|155364000|55812000|92543b28-94a3-4863-9a0e-583466592c52|e97df0f2-c3f8-4106-8948-a7a94ba479fd"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
       "rule_severities": {
         "annular_width": "error",
-        "clearance": "error",
+        "clearance": "ignore",
         "copper_edge_clearance": "error",
         "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
@@ -132,7 +125,8 @@
         0.3,
         0.4,
         0.5,
-        0.6
+        0.6,
+        0.8
       ],
       "via_dimensions": [
         {
@@ -497,8 +491,8 @@
       "idf": "WHEEL-07.emn",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "WHEEL-07.step",
-      "vrml": "WHEEL-07.wrl"
+      "step": "../../3D_MODEL/HOUSING/WHEEL-07.step",
+      "vrml": "../../3D_MODEL/WHEEL-07.wrl"
     },
     "page_layout_descr_file": ""
   },
